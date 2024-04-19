@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WebMed Links</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background: #ffffff; /* White background to match the logo's */
+		background-image: url('https://i.ibb.co/M9LB3Kq/Glassmorphism-Background.png');
+		/* background-repeat: no-repeat; */
+		/* background-size: cover; */
+        color: #003366; /* Dark blue color from the logo */
+        text-align: center;
+        padding: 20px;
+    }
+    .container {
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 800px;
+    }
+    .block {
+		background: rgba(255, 255, 255, 0.2);
+		border-radius: 16px #003366;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+		border: 1px solid rgba(0, 51, 102, 0.3);
+        margin: 20px 0;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .header {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #e50000; /* Red color from the logo */
+    }
+    a {
+        color: #003366; /* Dark blue color from the logo */
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    a:hover {
+        color: #e50000; /* Red color from the logo for hover state */
+    }
+    .logo {
+        margin-bottom: 20px;
+    }
+    .icon {
+        margin-right: 8px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="logo">
+        <img src="logo-dark_ka.png" alt="Company Logo">
+    </div>
+<div class="container">
+    <div class="block">
+        <div class="header">WebMed Links</div>
+        <div class="link-group">
+            <a href="http://172.21.15.115:4410/Web10.exe.0"><i class="fas fa-user-md icon"></i>QIRURGIA</a>
+            <a href="http://172.21.15.116:4441/WebmedCBalancer"><i class="fas fa-heartbeat icon"></i>AX SI</a>
+            <a href="http://172.21.15.115:4480/Web80.exe.0"><i class="fas fa-hospital icon"></i>BONI</a>
+            <a href="http://172.21.15.115:4490/Web90.exe.0"><i class="fas fa-clinic-medical icon"></i>MAXINJAURI</a>
+        </div>
+    </div>
+    <div class="block">
+        <div class="header">New Programs</div>
+        <div class="link-group">
+            <a href="https://surgery-webmed.kirurgia.ge"><i class="fas fa-user-md icon"></i>QIRURGIA</a>
+            <a href="https://newlife-webmed.kirurgia.ge"><i class="fas fa-baby icon"></i>Axali Sicocxle</a>
+            <a href="https://boni-webmed.kirurgia.ge"><i class="fas fa-hospital icon"></i>Batumi</a>
+            <a href="https://makhinjauri-webmed.kirurgia.ge"><i class="fas fa-clinic-medical icon"></i>Makhinjauri</a>
+        </div>
+    </div>
+    <div class="block">
+        <div class="header">Old Locations</div>
+        <div class="link-group">
+            <a href="http://makhinjauri.webmed.medalpha.ge"><i class="fas fa-clinic-medical icon"></i>Old Makhinjauri</a>
+            <a href="http://boni.webmed.medalpha.ge"><i class="fas fa-hospital icon"></i>Old Boni</a>
+        </div>
+    </div>
+    <div class="block">
+        <div class="header">Other Links</div>
+        <div class="link-group">
+            <a href="http://172.21.15.115:4448/web48.exe.0">AQ AR IMUSHAOT - OLD</a>
+            <a href="http://172.21.15.115:4447/web47.exe.0">ARC AQ IMUSHAOT - 2017</a>
+            <a href="http://172.21.15.115:4441/WebmedCBalancer?name=u7"><i class="fas fa-heartbeat icon"></i>AX SI (AVERSIS)</a>
+        </div>
+    </div>
+    <div class="block">
+        <iframe name="I1" src="http://webmed.kirurgia.ge/ip.asp" width="256" height="72" frameborder="0" style="margin: auto;"></iframe>
+    </div>
+</div>
+<script type="text/javascript">
+    var links = document.getElementsByTagName("a");
+    for (var i = 0; i < links.length; i++) {
+        links[i].onclick = function () {
+            var url = this.href;
+            this.href = "javascript:;";
+            location.href = url;
+            return false;
+        }
+    }
+</script>
+</body>
+</html>
